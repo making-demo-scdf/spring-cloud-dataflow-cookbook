@@ -1,0 +1,3 @@
+stream destroy --name words
+stream create --name words --definition "http | splitter --expression=payload.split(' ') | log"
+stream deploy words --properties "app.splitter.producer.partitionKeyExpression=payload,app.log.count=3"
