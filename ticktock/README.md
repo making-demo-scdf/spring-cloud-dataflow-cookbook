@@ -1,5 +1,7 @@
 # TickTock
 
+![image](https://cloud.githubusercontent.com/assets/106908/20023868/23d3fb60-a326-11e6-8c82-48398f5e062f.png)
+
 ## Deploy stream
 
 ``` shell

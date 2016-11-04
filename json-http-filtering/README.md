@@ -1,5 +1,7 @@
 # JSON HTTP Filtering
 
+![image](https://cloud.githubusercontent.com/assets/106908/20023801/b8fa4dd0-a325-11e6-9776-926bf86fce75.png)
+
 ## Deploy stream
 
 ``` shell

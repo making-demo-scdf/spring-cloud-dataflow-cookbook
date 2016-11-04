@@ -1,5 +1,7 @@
 # Stateful Stream Processing
 
+![image](https://cloud.githubusercontent.com/assets/106908/20023832/df74b108-a325-11e6-929d-ec227362783d.png)
+
 ## Deploy stream
 
 ``` shell

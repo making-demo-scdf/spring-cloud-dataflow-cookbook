@@ -1,5 +1,7 @@
 # Tap
 
+![image](https://cloud.githubusercontent.com/assets/106908/20023848/049b5004-a326-11e6-9060-fb2c95a59dca.png)
+
 ## Deploy stream
 
 ``` shell
