@@ -27,6 +27,9 @@ echo "\`\`\`" >> $dir/README.md
 echo "" >> $dir/README.md
 echo "## Test stream" >> $dir/README.md
 echo "" >> $dir/README.md
+echo "\`\`\`" >> $dir/README.md
+echo "\`\`\`" >> $dir/README.md
+echo "" >> $dir/README.md
 echo "## Destroy stream" >> $dir/README.md
 echo "" >> $dir/README.md
 echo "\`\`\` shell" >> $dir/README.md
