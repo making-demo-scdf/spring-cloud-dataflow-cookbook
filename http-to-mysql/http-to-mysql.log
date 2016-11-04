@@ -1,0 +1,2 @@
+stream create --name http-to-mysql --definition "http | jdbc --jdbc.columns=name --jdbc.table-name=names --jdbc.initialize=true --spring.datasource.init-sql='CREATE TABLE IF NOT EXISTS names(name varchar(255));'"
+stream deploy --name http-to-mysql --properties "app.jdbc.spring.cloud.deployer.cloudfoundry.services=name-db"
