@@ -1,0 +1,4 @@
+stream create --name tap-logger --definition "time | filter --expression=payload.endsWith('0') | log"
+stream create --name time-tap --definition ":tap-logger.time > log"
+stream deploy --name time-tap
+stream deploy --name tap-logger
