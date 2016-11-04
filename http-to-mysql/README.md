@@ -22,7 +22,7 @@ curl http://dataflow-http-to-mysql-http.local.pcfdev.io -X POST -H 'Content-Type
 
 
 ``` console
-$ f env dataflow-http-to-mysql-jdbc
+$ cf env dataflow-http-to-mysql-jdbc
 ...
 
 System-Provided:
