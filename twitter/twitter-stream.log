@@ -1,7 +1,3 @@
-# stream destroy --name tweets
-# stream destroy --name tweetlang
-# stream destroy --name tagcount
-
 stream create --name tweets --definition "twitterstream --consumerKey=<CONSUMER_KEY> --consumerSecret=<CONSUMER_SECRET> --accessToken=<ACCESS_TOKEN> --accessTokenSecret=<ACCESS_TOKEN_SECRET> | log"
 stream create --name tweetlang  --definition ":tweets.twitterstream > field-value-counter --fieldName=lang --name=language"
 stream create --name tagcount --definition ":tweets.twitterstream > field-value-counter --fieldName=entities.hashtags.text --name=hashtags"
