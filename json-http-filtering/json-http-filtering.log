@@ -1,0 +1,1 @@
+stream create --name filter-demo --definition "http | filter --expression=#jsonPath(payload,'$.origin.country').equals('JP') | log" --deploy
