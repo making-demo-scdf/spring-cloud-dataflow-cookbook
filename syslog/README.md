@@ -32,5 +32,5 @@ $ cf logs dataflow-message-only-log --recent
 ## Destroy stream
 
 ``` shell
-../destroy-stream.sh syslog
+../destroy-stream.sh syslog message-only
 ```
