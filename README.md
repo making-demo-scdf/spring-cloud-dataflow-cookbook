@@ -7,7 +7,7 @@ wget https://repo.spring.io/libs-milestone/org/springframework/cloud/spring-clou
 ./destroy-stream.sh foo bar baz
 ```
 
-## Appendix. Deploy Spring Cloud Data Flow Server for Cloud Foundry with PCF Dev
+## Deploy Spring Cloud Data Flow Server for Cloud Foundry with PCF Dev
 
 ### Start PCF Dev
 
@@ -106,3 +106,10 @@ cf push
 You can go to Dashboard 😉
 
 http://dataflow-server.local.pcfdev.io/dashboard
+
+## Import apps
+
+
+```
+./login-dataflow.sh ./import.log 
+```
