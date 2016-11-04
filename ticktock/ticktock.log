@@ -1,0 +1,2 @@
+stream create --name ticktock --definition "time | log"
+stream deploy --name ticktock
