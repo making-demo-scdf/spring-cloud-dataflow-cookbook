@@ -21,7 +21,7 @@ if [ "$TARGET" = "" ];then
 fi
 
 echo "Deploying ... $LOGFILE to $TARGET"
-java -jar spring-cloud-dataflow-shell-1.1.0.M2.jar --dataflow.uri=$TARGET --spring.shell.commandFile=$LOGFILE
+java -jar `dirname $0`/spring-cloud-dataflow-shell-1.1.0.M2.jar --dataflow.uri=$TARGET --spring.shell.commandFile=$LOGFILE
 
 if [ "$?" != "0" ];then
   echo "Failed"
