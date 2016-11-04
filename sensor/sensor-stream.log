@@ -1,2 +1,0 @@
-stream create --name sensor --definition "http | transform --expression=#jsonPath(payload,'$.temperature') | log"
-stream deploy --name sensor --properties "app.http.producer.partitionKeyExpression=payload.sensorId, app.http.count=2, app.transform.count=2, app.log.count=1"
