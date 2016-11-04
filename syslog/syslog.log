@@ -1,0 +1,5 @@
+stream create --name syslog --definition "syslog --syslog.nio=true --syslog.port=8080 --syslog.rfc=5424 --spring.main.web-environment=false | log"
+stream create --name message-only --definition ":syslog.syslog > transform --expression=payload.syslog_MESSAGE | log"
+
+stream deploy --name message-only
+stream deploy --name syslog
