@@ -1,6 +1,6 @@
 # HTTP to MySQL
 
-![image](https://cloud.githubusercontent.com/assets/106908/20025231/c4f5b7a0-a32f-11e6-9f47-288dd387b432.png)
+![image](https://cloud.githubusercontent.com/assets/106908/20025293/59063d70-a330-11e6-8a02-1a5259593359.png)
 
 ## Deploy stream
 
