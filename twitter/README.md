@@ -4,7 +4,7 @@
 
 ## Deploy stream
 
-Change `<CONSUMER_KEY>, `<CONSUMER_SECRET>`, `<CONSUMER_SECRET>`, and ``<ACCESS_TOKEN_SECRET>` in `twitter-stream.log`.
+Change `<CONSUMER_KEY>`, `<CONSUMER_SECRET>`, `<CONSUMER_SECRET>`, and `<ACCESS_TOKEN_SECRET>` in `twitter-stream.log`.
 You can create an app at the [Twitter Developers](https://apps.twitter.com/) site to get these credentials.
 
 ``` shell
