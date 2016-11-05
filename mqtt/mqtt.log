@@ -1,0 +1,2 @@
+stream create --name mqtt --definition "mqtt --mqtt.url=tcp://iot.eclipse.org:1883 --mqtt.topics=demo --spring.jmx.enabled=false | log"
+stream deploy --name mqtt

@@ -1,0 +1,1 @@
+app register --name mqtt --type source --uri https://github.com/making/spring-cloud-starter-stream-source-mqtt/releases/download/0.1.0.RELEASE/mqtt-source-rabbit-0.1.0.RELEASE.jar
