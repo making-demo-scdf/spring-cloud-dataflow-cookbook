@@ -21,7 +21,7 @@ mosquitto_pub -h iot.eclipse.org -p 1883 -d -t demo -m 'Hello World!'
 ```
 
 ``` console
-$ cf logs dataflow-mqtt-log
+$ cf logs dataflow-mqtt-log --recent
 ...
 
 2016-11-06T03:07:56.22+0900 [APP/0]      OUT 2016-11-05 18:07:56.220  INFO 15 --- [qtt.mqtt.mqtt-1] log.sink                                 : Hello World!
