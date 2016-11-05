@@ -1,0 +1,2 @@
+stream create --name tcp --definition "tcp --tcp.nio=true --tcp.port=8080 --spring.main.web-environment=false | log --expression='new String(payload)'"
+stream deploy --name tcp
