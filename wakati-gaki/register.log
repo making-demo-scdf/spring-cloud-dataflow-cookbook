@@ -1,0 +1,1 @@
+app register --name wakati --type processor --uri https://github.com/making-demo-scdf/wakati-kuromoji-processor/releases/download/1.0.0-dev1/wakati-kuromoji-processor-1.0.0-dev1.jar --force
