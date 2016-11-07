@@ -1,4 +1,4 @@
-# spring-cloud-dataflow-playground
+# Spring Cloud Data Flow Cook Book
 
 ``` shell
 wget https://repo.spring.io/libs-milestone/org/springframework/cloud/spring-cloud-dataflow-shell/1.1.0.M2/spring-cloud-dataflow-shell-1.1.0.M2.jar
@@ -111,5 +111,5 @@ http://dataflow-server.local.pcfdev.io/dashboard
 
 
 ```
-./login-dataflow.sh ./import.log 
+./login-dataflow.sh ./import.log
 ```
