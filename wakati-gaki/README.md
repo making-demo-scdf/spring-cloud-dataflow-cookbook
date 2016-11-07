@@ -4,6 +4,8 @@
 
 ## Deploy stream
 
+Register [`wakati` processor](https://github.com/making-demo-scdf/wakati-kuromoji-processor)
+
 ``` shell
 ../login-dataflow.sh register.log
 ```
