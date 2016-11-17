@@ -6,6 +6,12 @@
 
 ## Deploy stream
 
+Register [`wakati` processor (Reactor version)](https://github.com/making-demo-scdf/wakati-kuromoji-processor)
+
+``` shell
+../login-dataflow.sh register.log
+```
+
 ``` shell
 ../deploy-stream.sh twitter-to-wakati.log
 ```
