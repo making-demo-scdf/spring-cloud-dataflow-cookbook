@@ -1,0 +1,16 @@
+stream create --name ja-tweets --definition "twitterstream | filter --expression=#jsonPath(payload,'$.lang').equals('ja')  | log"
+stream deploy --name ja-tweets --properties "app.twitterstream.consumerKey=<CONSUMER_KEY>,app.twitterstream.consumerSecret=<CONSUMER_SECRET>,app.twitterstream.accessToken=<ACCESS_TOKEN>,app.twitterstream.accessTokenSecret=<ACCESS_TOKEN_SECRET>"
+
+stream create --name tagcount --definition ":ja-tweets.filter > field-value-counter --fieldName=entities.hashtags.text --name=hashtags"
+stream deploy --name tagcount --properties "app.field-value-counter.spring.cloud.deployer.cloudfoundry.services=df-redis"
+
+stream create --name words --definition ":ja-tweets.filter > transform --expression=payload.text | wakati | filter --expression=\"!#jsonPath(payload,'$.baseForm').equals('*') and (#jsonPath(payload,'$.partOfSpeechLevel1').equals('名詞') and #jsonPath(payload,'$.partOfSpeechLevel2').equals('一般'))\" | log"
+stream deploy --name words --properties "app.wakati.spring.cloud.stream.bindings.output.content-type=application/json"
+
+stream create --name wordcount --definition ":words.filter > field-value-counter --field-name=baseForm --name=wordcount"
+stream deploy --name wordcount --properties "app.field-value-counter.spring.cloud.deployer.cloudfoundry.services=df-redis"
+
+# ja-tweets=twitterstream | filter  | log
+# tagcount=:ja-tweets.filter > field-value-counter 
+# words=:ja-tweets.filter > transform --expression=payload.text | wakati | filter  | log
+# wordcount=:words.filter > field-value-counter
