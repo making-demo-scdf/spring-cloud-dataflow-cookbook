@@ -1,0 +1,1 @@
+app register --name python --type sink --uri https://github.com/making-demo-scdf/index-import-task/releases/download/1.0.0-dev0/pysink.jar --force

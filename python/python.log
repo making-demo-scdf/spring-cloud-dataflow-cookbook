@@ -1,0 +1,2 @@
+stream create --name python --definition "time | python"
+stream deploy --name python --properties "app.python.spring.cloud.deployer.cloudfoundry.buildpack=python_buildpack"
