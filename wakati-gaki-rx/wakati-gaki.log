@@ -1,5 +1,5 @@
 stream create --name wakati-gaki --definition "http | wakati | log"
-stream create --name noun-only --definition ":wakati-gaki.wakati > filter --expression=#jsonPath(payload,'$.partOfSpeechLevel1').equals('名詞') | log"
+stream create --name noun-only --definition ":wakati-gaki.wakati > filter --expression=\"!#jsonPath(payload,'$.baseForm').equals('*') and (#jsonPath(payload,'$.partOfSpeechLevel1').equals('名詞') and #jsonPath(payload,'$.partOfSpeechLevel2').equals('一般'))\" | log"
 
 stream deploy --name noun-only
 stream deploy --name wakati-gaki --properties "app.wakati.spring.cloud.stream.bindings.output.content-type=application/json"
