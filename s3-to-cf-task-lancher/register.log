@@ -1,0 +1,1 @@
+app register --name cf-task-launcher --type sink --uri https://github.com/making-demo-scdf/cf-task-launcher-sink/releases/download/1.0.0-dev3/cf-task-launcher-sink-1.0.0-dev3.jar
